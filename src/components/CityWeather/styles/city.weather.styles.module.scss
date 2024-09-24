@@ -1,0 +1,36 @@
+.weather_wrap{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .weather_card{
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px 30px 40px;
+        height: fit-content;
+        border-radius: 30px;
+        .card_header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .card_link{
+            display: flex;
+            justify-content: end;
+            a{
+                background: darkgray;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 10px;
+                display: block;
+                width: max-content;
+            }
+        }
+    }
+}

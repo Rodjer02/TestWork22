@@ -1,0 +1,22 @@
+.wrap{
+    height: 100vh;
+    padding: 80px;
+    .cities{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        .box{
+            background: #a9a9a933;;
+        padding: 20px 30px 40px;
+        height: fit-content;
+        border-radius: 30px;
+            .box_header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+        }
+    }
+}

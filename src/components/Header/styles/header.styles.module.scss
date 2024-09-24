@@ -1,0 +1,53 @@
+
+
+.header_nav{
+    display: flex;
+    padding: 20px 80px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    justify-content: space-between;
+    background: rgb(255 255 255 / 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: darkgray;
+
+    input{
+        background: no-repeat;
+    border-bottom: 1px solid darkgrey;
+    padding: 2px 10px;
+    outline: none;
+    color: darkgray;
+    }
+    button{
+        
+        background: darkgray;
+        height: 100%;
+        border: 1px solid darkgray;
+        padding: 2px 10px;
+        color: #fff;
+    }
+    .header_menu{
+        display: flex;
+    gap: 20px;
+    align-items: center;
+        li{
+            position: relative;
+            ::before{
+                content: ' ';
+                position: absolute;
+                bottom: 2px;
+                right: 0;
+                left: 0;
+                width: 100%;
+                transform: rotateY(90deg);
+                border-bottom: 1px solid darkgray;
+                transition: 1s ease all;
+            }
+            :hover::before{
+                    content: ' ';
+                    transform: rotateY(0deg);
+            }
+        }
+    }
+}
