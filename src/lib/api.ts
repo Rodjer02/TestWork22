@@ -1,7 +1,8 @@
+require('dotenv').config();
 import { ForecastData } from '@/types/weather';
 import axios from 'axios';
 
-const API_KEY = '5594cddffb0d0d07a203804298af53e3';  // Вставь свой API-ключ OpenWeatherMap
+const API_KEY = process.env.API_KEY; 
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/';
 
 export const getWeatherData = async (city: string) => {
@@ -29,7 +30,7 @@ export const getForecastData = async (city: string): Promise<ForecastData> => {
         units: 'metric',
       },
     });
-    return response.data; // Убедитесь, что вы возвращаете данные правильно
+    return response.data; 
   } catch (error) {
     console.error('Error fetching forecast data', error);
     throw error;
